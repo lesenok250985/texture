@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>star sphere</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="play-pause" onclick="animatePyramid()" autocomplete="off">
+  <div class="w-bricks pyramid" id="pyramid">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div>
+      <div></div>
+    </div>
+  </div>
+  
+  <div id="hidden-copy-html" class="hidden"> 
+  &lt;<span id="w-pyramid">w-bricks</span> pyramid <span id="anim">running</span><span id="cp-width">35</span><span id="cp-height"></span><span id="cp-hypo"></span><span id="cp-alpha"></span>&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  </div>
+
+  <div id="hidden-copy-css" class="hidden">
+
+  </div> 
+  <footer>
+  
+    <div class="wall-design">
+      <input type="radio" name="wall" id="w-bricks" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off" checked><label for="w-bricks"></label>
+      <input type="radio" name="wall" id="w-granite" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-granite"></label>
+      <input type="radio" name="wall" id="w-crystal" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-crystal"></label>
+      <input type="radio" name="wall" id="w-grille" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-grille"></label>
+      <input type="radio" name="wall" id="w-smooth" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-smooth"></label>
+      <button id="w-more" onclick="moreWalls()"></button>
+      <div class="w-more down" id="w-mores">
+        <input type="radio" name="wall" id="w-honeycomb" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-honeycomb"></label>
+        <input type="radio" name="wall" id="w-triangle" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-triangle"></label>
+        <input type="radio" name="wall" id="w-blocks" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-blocks"></label>
+        <input type="radio" name="wall" id="w-basket" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-basket"></label>
+        <input type="radio" name="wall" id="w-woven" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-woven"></label>
+        <input type="radio" name="wall" id="w-zigzag" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-zigzag"></label>
+        <input type="radio" name="wall" id="w-puzzle" oninput="setWall(this.id)" onchange="setWall(this.id)" autocomplete="off"><label for="w-puzzle"></label>
+      </div>
+    </div>
+    <label for="play-pause"></label>
+    <span></span>
+  </footer>
+  
+  <textarea id="hidden-copy-text" value=""></textarea>
+</body>
+</html>
+
+
+
